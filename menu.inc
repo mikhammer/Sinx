@@ -1,5 +1,7 @@
 <?php
-session_start();
+if(!isset($_SESSION)){
+    session_start();
+}
 /*======================================================================+
  File name   : menu.inc
  Begin       : 2010-08-04
